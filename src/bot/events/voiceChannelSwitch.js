@@ -13,7 +13,7 @@ module.exports = {
           name: `${member.username}#${member.discriminator} ${member.nick ? `(${member.nick})` : ''}`,
           icon_url: member.avatarURL
         },
-        description: `**${member.username}#${member.discriminator}** ${member.nick ? `(${member.nick})` : ''} moved from <#${oldChannel.id}> (${oldChannel.name}) to <#${channel.id}> (${channel.name}).`,
+        description: `**${member.username}#${member.discriminator}** moved from <#${oldChannel.id}> (${oldChannel.name}) to <#${channel.id}> (${channel.name}).`,
         fields: [{
           name: 'Current channel they are in',
           value: `<#${channel.id}> (${channel.name})`
